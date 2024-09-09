@@ -16,7 +16,7 @@
 ///////////////////////////////
 
 // Planets data under sample_geospacial
-// planets greater than 2nd from sun and without rings
+// planets not greater than 2nd from sun nor without rings
 {$nor: [{orderFromSun: {gt:2}},{hasRings: "false"}]}
 
 // routes data under sample_training
