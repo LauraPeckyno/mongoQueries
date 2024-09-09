@@ -17,7 +17,7 @@
 
 // Planets data under sample_guides
 // planets not greater than 5th from sun nor less than 2nd from the sun
-{ $nor: [{ "orderFromSun": { $gt: 5 } },{ "orderFromSun": { $lt: 2 } }]}
+{$nor: [{orderFromSun:{ $gt: 5 }},{orderFromSun: {$lt: 2}}]}
 
 // routes data under sample_training
 // routes that dont use a CR2 plane
@@ -50,7 +50,7 @@
 
 // data under sample_weatherdata
 // weather data with call letters of either GYYA, UHRY, or GBVV
-{ callLetters: { $in: [ "GYYA", "UHRY", "GBVV" ] } }
+{callLetters: {$in: ["GYYA", "UHRY", "GBVV"]}}
 
 //movies under sample_mflix
 // movies that aren't rated G, TV-G, or Passed
