@@ -15,9 +15,9 @@
 // 2. $not and $nor
 ///////////////////////////////
 
-// Planets data under sample_geospacial
-// planets not greater than 2nd from sun nor without rings
-{$nor: [{orderFromSun: {gt:2}},{hasRings: "false"}]}
+// Planets data under sample_guides
+// planets not greater than 3rd from sun nor without rings
+{$nor: [{orderFromSun: {$gt: 3}},{hasRings: "false"}]}
 
 // routes data under sample_training
 // routes that dont use a CR2 plane
